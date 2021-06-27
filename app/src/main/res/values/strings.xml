@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Almonoid</string>
+
+    <string-array name="Spinner_items">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Widow</item>
+        <item>Widower</item>
+
+
+
+    </string-array>
+</resources>
