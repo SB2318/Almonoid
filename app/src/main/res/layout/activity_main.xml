@@ -21,7 +21,7 @@
              android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
              app:logo="@drawable/arrow"
              app:title="Personal Information"
-             app:titleMarginStart="70dp"
+             app:titleMarginStart="36dp"
              tools:ignore="MissingConstraints">
 
     </androidx.appcompat.widget.Toolbar>
@@ -65,40 +65,43 @@
              app:layout_constraintStart_toStartOf="parent"
              app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-         <EditText
-             android:id="@+id/nickName1"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginStart="25dp"
-             android:layout_marginTop="10dp"
-             android:layout_marginEnd="25dp"
-             android:background="@drawable/custom_text"
-             android:ems="10"
-             android:textCursorDrawable="@color/colorNew"
-             android:inputType="textPersonName"
-             android:paddingLeft="7dp"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/nickName" />
+    <EditText
+        android:id="@+id/nickName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/custom_text"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="7dp"
+        android:textCursorDrawable="@color/colorNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickName"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-             android:id="@+id/about1"
-             android:layout_width="match_parent"
-             android:layout_height="60dp"
-             android:layout_marginStart="25dp"
-             android:layout_marginTop="10dp"
-             android:layout_marginEnd="25dp"
-        android:textColor="#000000"
-        android:inputType="textMultiLine"
-             android:background="@drawable/custom_text"
-        android:textCursorDrawable="@color/colorNew"
-
+        android:id="@+id/about1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/custom_text"
         android:ems="10"
-             android:maxLength="200"
-             android:paddingLeft="7dp"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/about" />
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+
+        android:paddingLeft="7dp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@color/colorNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about"
+        tools:ignore="SpeakableTextPresentCheck" />
 
          <TextView
              android:id="@+id/birthdate"
@@ -111,23 +114,25 @@
              app:layout_constraintStart_toStartOf="parent"
              app:layout_constraintTop_toBottomOf="@+id/about1" />
 
-         <EditText
-             android:id="@+id/birthdate1"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginStart="25dp"
-             android:layout_marginTop="10dp"
-             android:layout_marginEnd="100dp"
-             android:background="@drawable/custom_text"
-             android:textCursorDrawable="@color/colorNew"
+    <EditText
+        android:id="@+id/birthdate1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/custom_text"
+        android:ems="10"
 
-             android:ems="10"
-             android:inputType="textPersonName"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
 
-             android:paddingLeft="7dp"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/birthdate" />
+        android:paddingLeft="7dp"
+        android:textCursorDrawable="@color/colorNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthdate"
+        tools:ignore="SpeakableTextPresentCheck" />
 
          <TextView
              android:id="@+id/relationship"
@@ -140,24 +145,24 @@
              app:layout_constraintStart_toStartOf="parent"
              app:layout_constraintTop_toBottomOf="@+id/birthdate1" />
 
-         <Spinner
-             android:id="@+id/relationship1"
-             android:layout_width="match_parent"
-             android:layout_height="20dp"
-             android:layout_marginStart="25dp"
-             android:layout_marginTop="10dp"
-             android:layout_marginEnd="25dp"
+    <Spinner
+        android:id="@+id/relationship1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
 
-             android:ems="10"
-             android:background="@drawable/custom_text"
+        android:background="@drawable/custom_text"
+        android:ems="10"
 
-             android:entries="@array/Spinner_items"
-             android:inputType="textPersonName"
-             android:paddingLeft="7dp"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintHorizontal_bias="0.0"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/relationship" />
+        android:entries="@array/Spinner_items"
+        android:inputType="textPersonName"
+        android:paddingLeft="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relationship" />
 
          <TextView
              android:id="@+id/hobbies"
@@ -185,22 +190,24 @@
         app:layout_constraintTop_toBottomOf="@+id/nickName1" />
 
     <EditText
-             android:id="@+id/hobbies1"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginStart="25dp"
-             android:layout_marginTop="10dp"
-             android:layout_marginEnd="25dp"
-             android:background="@drawable/custom_text"
-             android:ems="10"
-        android:textCursorDrawable="@color/colorNew"
-
-
+        android:id="@+id/hobbies1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/custom_text"
+        android:ems="10"
         android:inputType="textPersonName"
-             android:paddingLeft="7dp"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/hobbies" />
+
+
+        android:minHeight="48dp"
+        android:paddingLeft="7dp"
+        android:textCursorDrawable="@color/colorNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbies"
+        tools:ignore="SpeakableTextPresentCheck" />
 
          <TextView
              android:id="@+id/interests"
@@ -213,22 +220,24 @@
              app:layout_constraintStart_toStartOf="parent"
              app:layout_constraintTop_toBottomOf="@+id/hobbies1" />
 
-         <EditText
-             android:id="@+id/interests1"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginStart="25dp"
-             android:layout_marginTop="15dp"
-             android:layout_marginEnd="25dp"
-             android:background="@drawable/custom_text"
-             android:ems="10"
-             android:inputType="textPersonName"
-             android:textCursorDrawable="@color/colorNew"
+    <EditText
+        android:id="@+id/interests1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/custom_text"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
 
-             android:paddingLeft="7dp"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/interests" />
+        android:paddingLeft="7dp"
+        android:textCursorDrawable="@color/colorNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interests"
+        tools:ignore="SpeakableTextPresentCheck" />
 
          <TextView
              android:id="@+id/counter"
@@ -240,15 +249,16 @@
              app:layout_constraintEnd_toEndOf="parent"
              app:layout_constraintTop_toBottomOf="@+id/nickName1" />
 
-         <ImageButton
-             android:id="@+id/imageButton"
-             android:layout_width="35dp"
-             android:layout_height="24dp"
-             android:layout_marginStart="20dp"
-             android:layout_marginTop="40dp"
-             app:layout_constraintStart_toEndOf="@+id/birthdate1"
-             app:layout_constraintTop_toBottomOf="@+id/about1"
-             app:srcCompat="@drawable/calender" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/birthdate1"
+        app:layout_constraintTop_toBottomOf="@+id/about1"
+        app:srcCompat="@drawable/calender"
+        tools:ignore="SpeakableTextPresentCheck" />
 
          <TextView
              android:id="@+id/textView9"
@@ -263,11 +273,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="351dp"
-        android:layout_height="87dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView9" />
@@ -276,6 +287,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
         android:layout_height="50dp"
+
         android:background="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -319,13 +331,14 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView"
-        app:srcCompat="@drawable/addcircle" />
+        app:srcCompat="@drawable/addcircle"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/tag"
-        android:layout_width="66dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
         android:text="TAGS"
         app:layout_constraintEnd_toEndOf="parent"
@@ -335,9 +348,8 @@
         app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"
-        android:layout_width="351dp"
-        android:layout_height="47dp"
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="10dp"
