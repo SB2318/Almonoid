@@ -38,7 +38,8 @@
             android:buttonTint="@color/colorAccent"
             android:checked="true"
             android:text="Yes"
-            android:textColor="@color/colorNew" />
+            android:textColor="@color/colorNew"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/radioButton8"
@@ -47,6 +48,7 @@
             android:layout_weight="1"
             android:buttonTint="@color/colorAccent"
             android:text="No"
-            android:textColor="@color/colorNew" />
+            android:textColor="@color/colorNew"
+            tools:ignore="TouchTargetSizeCheck" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
